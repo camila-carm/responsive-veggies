@@ -1,0 +1,298 @@
+html{
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Mobile Default */
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	justify-content: center;
+	text-align: center;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.12em;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.3em;
+    padding: 0 30px;
+
+}
+
+/*The widths are in a percentage!*/
+header {
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0;
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+	justify-content: center;
+	text-align: center;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 20px 0;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	order: 2;
+
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+	justify-content: center;
+	padding: 10px 0;
+
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+}
+
+.main-image {
+	height: auto;
+	display: flex;
+	margin-top: 265px;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+	justify-content: center;
+	margin: 15px;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 15px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	text-align: left;
+}
+
+.section-one h4 {
+	padding: 10px 0;
+
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+	justify-content: center;
+	text-align: center;
+}
+
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
+}
+
+
+/*Tablets*/
+
+@media (min-width:768px) {
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 28%;
+		height: auto;
+		border-top: 1px solid #eee;
+		display: inline-block;
+		text-align: left;
+		float: left;
+		padding: 0 15px;
+}
+
+.section-one h4,
+.section-two h4,
+.section-three h4 {
+		text-align: left;
+	}
+
+	.main-title {
+		height: auto;
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	.menu li {
+		padding: 10px 0;
+		color:#77a466;
+		margin: 0;
+		text-align: left;
+	}
+}
+
+
+/*Desktop*/
+
+@media (min-width:992px){
+
+	html{
+		margin: 0 15px;;
+	}
+
+ 	header h1{
+		float: left;
+		text-align: left;
+	}
+
+	header nav{
+		float: right;
+		padding-top: 50px;
+	}
+
+	header nav ul li{
+		display: inline;
+		padding: 0 20px;
+	}
+
+	.main-title {
+		height: auto;
+		float: left;
+		margin-bottom: 20px;
+	}
+	.main-title h3 {
+		text-align: left;
+		padding: 5px 0;
+		color: #77a466;
+	}
+	.main-title p {
+		padding: 0;
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.main-image{
+		margin: 0;
+		float:left;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+		height: auto;
+		border-top: 1px solid #eee;
+		display: inline-block;
+		text-align: left;
+		float: left;
+}
+
+
+	.section-one h4,
+	.section-two h4,
+	.section-three h4 {
+			text-align: left;
+		}
+
+	.section-one h3,
+	.section-two h3,
+	.section-three h3 {
+				text-align: left;
+			}
+}
